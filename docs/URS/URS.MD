@@ -1,6 +1,5 @@
 
 ### User Requirements Specification Document
-##### DIBRIS – Università di Genova. Scuola Politecnica, Software Engineering Course 80154
 
 
 **VERSION : 1.0**
@@ -12,7 +11,7 @@ Matteo
 **REVISION HISTORY**
 
 | Version    | Date        | Authors      | Notes        |
-| 1.0 | 18/06/2024 | Aurino Matteo | added png pic! |
+| 1.0 | 27/06/2024 | Aurino Matteo | added png pic! |
 | X.X |  | |  |
 
 # Table of Contents
@@ -94,69 +93,80 @@ Matteo
 
 **# ATTORI**
 
-1) cliente : esegue richieste di operazione sui suoi conti correnti
-2) banca : esegue controlli in relazione alle azioni che può compiere il cliente della banca
-3) operatore : addetto al funzionamento fisico della macchina, accende o spegne.
-
-#CLIENTE :
+1) operatore : colui che aggiunge, rimuove o modifica libri nel Database
 
 
-casi d'uso = 
-
-1)richiesta prelievo
-
-2)richiesta saldo
-
-3)richiesta trasferimento
-
-4)richiesta accredito
 
 
 #OPERATORE : 
 
-
 casi d'uso =
 
-1)accensione
+1) Aggiunta libro da Database
 
-2)spegnimento
+2) Rimozione libro da Database
+
+3) Modifica libro da Database
 
 
 **Scenario Principale**
 
-1) cliente inserisce carta
+1) Operatore seleziona "Aggiungi Libro".
 
-2) cliente inserisce PIN corretto
+2) Computer notifica all'utente di inserire i dati del libro.
 
-3) cliente seleziona azione da compiere
+**3) Inserimento Dati**
 
-4) cliente seleziona quantità di denaro
+4) Controllo in Database se dato 4 (ISBN) è già presente all'interno del Database
 
-5) cliente ritira l'erogazione della tessera/ricevuta/soldi
+5) Aggiunta del libro nel Database
 
-6) macchina pulisce schermo e torna alla schermata iniziale
+6) Computer notifica operatore che l'operazione è avvenuta con successo
+
+7) Computer pulisce schermo e ritorna alla schermata iniziale.
 
 
 
 
-**Scenario Alternativo A**
+##BRANCA OPZIONE 3:
 
-1.A) ATM notifica che il PIN e' errato per la terza volta
+1.0) lettura input primo dato: TITOLO
+##CONTROLLO SU INPUT##
+1.1) lettra input secondo dato: AUTORE
+##CONTROLLO SU INPUT##
+1.2) lettra input terzo dato: DATA PUBBLICAZIONE
+##CONTROLLO SU INPUT##
+1.3) lettra input quarto dato: IS
+##CONTROLLO SU INPUT##
+
+
+
+**Scenario Alternativo 4A**
+
+1.A) L'ISBN è già presente in archivio
 		
-     1.A) ATM notifica che il PIN inserito è scorretto.
+     2.A) Computer notifica che un libro con un codice ISBN uguale è già salvato all'interno dell'archivio
 
-     1.A) ATM notifica che non restituira' la tessera.
+     3.A) Computer mostra all'operatore il libro con lo stesso ISBN 
 
-     1.A) ATM va al punto 6 dello scenario principale
-
-
-**Scenario Alternativo B**
-
-     1.B) ATM notifica che il Pin è corretto ed invita a reinserirlo
-     1.B) 
+     4.A) Coomputer chide di scegliere all'operatore che opzione preferisce tra "Annulla operazione | modifica libro tentato di inserire | modifica libro già presente in archivio"
 
 
 
 
-![Ciao!](imgs/atm.png)
+**Scenario Alternativo 4AB**
+
+1.AB) Computer notifica che l'operazione è stata annullata
+
+    2.AB)  Computer esegue direttamente **Scenario principale 7)**
+
+
+
+**Scenario Alternativo 4AC**
+
+1.AC) Computer notifica all'operatore di reinserire l'ISBN 
+
+    2.AC)  Computer ritona nuovamente a **BRANCA OPZIONE 3   1.3)** 
+
+
 
