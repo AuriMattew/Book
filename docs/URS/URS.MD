@@ -109,7 +109,7 @@ casi d'uso =
 3) Modifica libro da Database
 
 
-**Scenario Principale**
+**Scenario Principale 1**
 
 1) Operatore seleziona "Aggiungi Libro".
 
@@ -124,9 +124,6 @@ casi d'uso =
 6) Computer notifica operatore che l'operazione è avvenuta con successo
 
 7) Computer pulisce schermo e ritorna alla schermata iniziale.
-
-
-
 
 ##BRANCA OPZIONE 3:
 
@@ -153,7 +150,6 @@ casi d'uso =
 
 
 
-
 **Scenario Alternativo 4AB**
 
 1.AB) Computer notifica che l'operazione è stata annullata
@@ -161,12 +157,96 @@ casi d'uso =
     2.AB)  Computer esegue direttamente **Scenario principale 7)**
 
 
-
 **Scenario Alternativo 4AC**
 
 1.AC) Computer notifica all'operatore di reinserire l'ISBN 
 
     2.AC)  Computer ritona nuovamente a **BRANCA OPZIONE 3   1.3)** 
+
+
+
+
+
+
+
+**Scenario Principale 2**
+
+1) Operatore seleziona "Rimozione Libro".
+
+2) Computer richiede di inserire all'operatore l'ISBN del libro da rimuovere
+
+3) Computer esegue funzioni **Scenario Principale 1, 3)**
+
+4) Computer esegue funzioni **Scenario Principale 1, 4)** 
+
+6) Computer notifica operatore che l'operazione è avvenuta con successo
+
+7) Computer pulisce schermo e ritorna alla schermata iniziale.
+
+
+**Scenario Alternativo 24A**
+
+2.A) L'ISBN non è presente in archivio
+
+     2.A) Coomputer informa che all'operatore che l'ISBN immesso non è presente in archvio
+
+	2.A) Computer chiede all'operatore se vuole reinserire l'ISBN o uscire
+
+	2.A) Computer trova l'ISBN
+
+	2.A) Computer torna a **Scenario Principale 2 6)**
+
+
+
+**Scenario Alternativo 24AB**
+
+2.AB) l'operatore sceglie di reinserire ISBN
+
+     3) Computer esegue funzioni **Scenario Principale 1, 3)**
+
+**Scenario Alternativo 24AC**
+
+1.AB) Computer notifica che l'operazione è stata annullata
+
+    2.AB)  Computer esegue direttamente **Scenario principale 7)**
+
+
+
+
+
+
+
+**Scenario Principale 3**
+
+1) Operatore seleziona "Modifica Libro".
+
+2) Computer richiede di inserire all'operatore l'ISBN del libro da modificare
+
+3) Computer esegue funzioni **Scenario Principale 1, 3)**
+
+4) Computer esegue funzioni **Scenario Principale 1, 4)** 
+
+6) Computer notifica operatore che l'operazione è avvenuta con successo
+
+7) Computer pulisce schermo e ritorna alla schermata iniziale.
+
+
+**Scenario Alternativo 34A**
+
+3.A) Computer esegue funzioni **Scenario Alternativo 224AB**
+
+
+**Scenario Alternativo 34AB**
+
+3.AB) 3.A) Computer esegue funzioni **Scenario Alternativo 24AB**
+
+**Scenario Alternativo 24AC**
+
+3.AB) Computer esegue funzioni **Scenario Alternativo 24AB**
+
+
+
+
 
 
 
