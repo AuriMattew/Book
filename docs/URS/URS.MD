@@ -101,6 +101,13 @@ Permettere ad un operatore di modificare, eliminare e aggiungere libri all'inter
 
 1) operatore : colui che aggiunge, rimuove o modifica libri nel Database
 
+
+![Ciao!](imgs/Operatore.png)
+
+
+
+
+
 #OPERATORE : 
 
 casi d'uso =
@@ -248,8 +255,6 @@ casi d'uso =
 3.AB) Computer esegue funzioni **Scenario Alternativo 24AB**
 
 
-
-![Ciao!](imgs/Operatore.png)
 
 
 
