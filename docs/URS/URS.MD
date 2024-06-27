@@ -91,12 +91,15 @@ Matteo
 | --------------- | ----------- | ---------- | 
 | 1.0 | XXXXX |M|
 
+
+@Project Priority
+Permettere ad un operatore di modificare, eliminare e aggiungere libri all'interno di un database virtuale.
+
+
+
 **# ATTORI**
 
 1) operatore : colui che aggiunge, rimuove o modifica libri nel Database
-
-
-
 
 #OPERATORE : 
 
