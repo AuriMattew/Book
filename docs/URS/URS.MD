@@ -174,7 +174,9 @@ casi d'uso =
     2.AC)  Computer ritona nuovamente a **BRANCA OPZIONE 3   1.3)** 
 
 
+**Scenario Alternativo 4AD**
 
+1.AC) Computer esegue **Scenario Principale 3**
 
 
 
