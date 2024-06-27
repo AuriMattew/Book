@@ -249,7 +249,7 @@ casi d'uso =
 
 
 
-
+![Ciao!](imgs/Operatore.png)
 
 
 
